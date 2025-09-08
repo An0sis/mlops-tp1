@@ -16,3 +16,7 @@ class HouseFeatures(BaseModel):
 async def predict(features: HouseFeatures):
     prediction = model.predict([[features.size, features.nb_rooms, features.garden]])[0]
     return {"prediction": prediction}
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome to the House Price Prediction API!"}
