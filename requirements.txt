@@ -4,3 +4,6 @@ joblib
 scikit-learn
 pydantic
 pandas
+transformers
+tf-keras
+torch
